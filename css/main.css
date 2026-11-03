@@ -122,7 +122,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-        .card-title{
+        .card-body .card-title{
             transition: none;
         }
     }
