@@ -69,7 +69,7 @@
     }
 
     .card{
-        max-width: 375px;
+        max-width: 24rem;
         padding: var(--pd);
         border-radius: var(--b-rad);
         background-color: var(--Blue-900-card-BG);
@@ -101,9 +101,11 @@
             cursor: pointer;
         }
 
-        &:hover::before{
-            opacity: 1;
-        }
+        
+    }
+
+    .card .card-img:hover::before{
+        opacity: 1;
     }
 
      .card .img{
@@ -142,7 +144,7 @@
 
     .card-stats .stat{
         color: var(--Blue-500);
-        margin-inline-start: 0.25rem;        
+        margin-inline-start: clamp(0.15rem, 0.5vw, 0.25rem);        
     }
 
     .card .card-bio{
@@ -192,9 +194,12 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .card-title,
+    .card-title{
+        transition: none;
+    }
+
     .avatar-name span{
         transition: none;
     }
-    
+ 
 }
