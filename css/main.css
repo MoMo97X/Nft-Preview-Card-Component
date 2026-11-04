@@ -151,6 +151,10 @@
         margin-inline-start: clamp(0.15rem, 0.5vw, 0.25rem);        
     }
 
+    .card-stats .ethereum{
+        color: var(--Cyan-hover-400);
+    }
+
     .card .card-bio{
         display: flex;
         align-items: center;
